@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Selector and combinator</title>
+    <style>
+     div~p{
+        background-color:blue;
+     }
+    </style>
+</head>
+<body>
+    <h1>this is a heading1</h1>
+    <div>
+    <p>this is a paragraph 1</p>
+    <p>this is a paragraph 2</p> <!--child selector korar jonno style div>p use korte hobe.> aiti div use na kore 3ta p select hoye jabe-->
+    <section><p>this is a paragraph 3</p></section>
+</div>
+    <p>this is a paragraph 4</p>
+    <p>this is a paragraph 5</p>
+</body>
+</html>
+<!-- * dea sob kiso decclear kora hoi.background color dile puru page tai color hye  jabe-->
+
+
+<!--universal seslector * syntex
+    <style>
+        *{
+background-color: rgb(98, 79, 195);
+color:rgb(211, 211, 58)
+        }
+    </style>
+-->
+
+
+<!--grouping selector
+     h1,p{
+        background-color: aqua;
+        color: blue;
+      }
+      aksathe h1,p,..... select kora k grouping selector bole
+-->
+
+
+<!--combinator sahajje selector gulu relation toiri kora hoi-->
+
+
+
+<!--decending selector syntex
+    <style>
+     div p{
+        background-color:blue;
+     }
+    </style>
+    <div>
+    <p>this is a paragraph 1</p>
+    <p>this is a paragraph 2</p>
+</div>
+-->
+
+
+
+<!--child selector
+div>p{
+        background-color:blue;
+     }
+    </style>
+</head>
+<body>
+    <h1>this is a heading1</h1>
+    <div>
+    <p>this is a paragraph 1</p>
+    <p>this is a paragraph 2</p> child selector korar jonno style div>p use korte hobe.> aiti div use na kore 3ta p select hoye jabe
+    <section><p>this is a paragraph 3</p></section>
+</div>
+    <p>this is a paragraph 4</p>-->
+
+
+
+
+    <!--adjacent siviling selector
+    div+p{
+        background-color:blue;
+     }
+    </style>
+</head>
+<body>
+    <h1>this is a heading1</h1>
+    <div>
+    <p>this is a paragraph 1</p>
+    <p>this is a paragraph 2</p>
+<section><p>this is a paragraph 3</p></section>
+</div>
+    <p>this is a paragraph 4</p>
+    <p>this is a paragraph 5</p> div+p imidiate j para graph ase seita k select korbe.ortath this is a paragraph 4 aita background color dekhabe-->
+
+
+    <!-- general siviling selector ~ till use korte hobe.r aita use korle div por baki paragraph ta background color change hobe-->

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>card design using shadow effect</title>
+    <style>
+.card{
+    width:600px;
+    height:500px;
+  box-sizing: border-box;
+    margin:2px;
+    padding-top:2px;
+    box-shadow: 1px 5px 10px rgb(216, 6, 150);
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+    float: left;
+}
+.image-style{
+    width:50%;
+    float: left;
+}
+.card-title{
+color:aliceblue;
+font-size: 2rem;
+text-align: center;
+text-shadow:1px 2px 5px white;
+padding-left: 40px;
+float: left;
+}
+.card .card-body {
+    text-align: justify;
+    color: white;
+    float: left;
+    width:50%;
+    padding-left: 48%;
+
+
+}
+.card:hover{
+
+    box-shadow: 1px 2px 5px white;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+
+<img  class= "image-style"src="https://www.programming-hero.com/img/header-banner-phone.png" alt="">
+  <div class="card-title">
+   <p>Web Devlopment</p>
+  </div><br>
+  <div class="card-body">
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam nobis dolor corrupti laudantium placeat voluptates voluptas consectetur reiciendis amet fugiat?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, sit!</p>
+  </div>
+    </div>
+</body>
+</html>

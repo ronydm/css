@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .grid-container{
+            display:grid;
+            /*grid-template-columns: 100px auto auto auto ;aitir sahajee  koto gulu column chai ,width thik kora hoi.3auto daor karon holo 3ta column hobe ,chaile px dea declear kora jai.100px dea 1st column ti 100px jaiga nibe*/
+            grid-template-columns:  auto auto auto auto ;
+       /*grid-template-rows: 120px;protom row ta 120px gap dibe,2nd aro akta px daoa tahkle 2nd row tai gap dekhabe*/
+       /*grid-column-gap: 10px;
+       grid-row-gap: 5px;*/
+      /* background-color: rgb(15, 180, 9);
+       grid-gap:10px 5px;/*1st row gap,2nd ta column gap,upore 2line maddome alada alada vabe declear korajai,aber aiavbeo kora jai*/
+       /*align-content:center;*/
+       justify-content: center;/*sstart dile table soro te thkbe,end dile ses,center dile majkane*/
+
+        }
+        .grid-container > div {
+            background-color: rgb(56, 134, 223);
+            text-align: center;
+            border: 1px solid rgb(6, 8, 8);
+            padding:5px;
+
+        }
+        .item1{
+            /*grid-column-start: 1;
+            grid-column-end: 3;*/
+           /* grid-column:1 /   3; jeikono akvabe declear kora jai*/
+            grid-column:1 /  span 3;/*span dile 3ta column jaiga dukul korbe*/
+           /* grid-row-start: 1;
+            grid-row-end: 4;*/
+            grid-row: 1 / 4;
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+<div class="item1">1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+    </div>
+ 
+</body>
+</html>
+<!-- grid layout hocche 2 diemensonal-->

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltive and overflow property </title>
+    <style>
+        .div1{
+            height:100px;
+            width:250px;
+            text-align:left;
+            overflow:scroll;
+            background-color: aqua;
+            }
+            .container{
+                position: relative;
+            }
+          .container .container-text{
+          visibility: hidden;
+           width:150px;
+           color:rgb(154, 18, 127);
+           background-color: rgb(1, 6, 11);
+           border-radius:5px;
+           margin:5px;
+           padding:10px;
+           position: absolute;
+           top:17px;
+           left:20px;
+           z-index: 1;
+ }
+.container:hover .container-text{
+
+    visibility:visible;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        Facebook <span class="container-text">Facebook is a social site</span>
+    </div>
+    <br><br>
+     <div class="div1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam possimus iste labore, tenetur maiores earum assumenda accusantium a quod sapiente velit voluptate ipsam voluptas nobis voluptatum rerum illo corporis aut iusto eius explicabo eligendi temporibus ipsa deleniti. Hic ab unde, voluptatem similique molestias totam dicta ullam quaerat, necessitatibus qui adipisci.</p>
+     </div>
+</body>
+</html>
+<!--tooltive hocche kono akta additional information daoa,kono kiso upor cursor nile ai somporke kiso information dekhano -->
+<!--kono akta container height and width airkm contain  rakha ase,bt container contain gulu jiag nicche na ,airkm problem solve korar overflow use kora hoi-->
+<!--overflow:visible ; kaj holo joto toko container height width set kra ase tototoko jaiga nibe.-->
+<!--overflow:hidden; kaj holo joto toko contianer set kora thakbe totodoko dekhabe baki ta hide kore felbe-->
+<!--   overflow:scroll; kaj holo joto container height daao thkbe tototoko bitore scroll kore baki gulu dekha jabe-->
+<!--overflow:auto;jokon projon hobr tokon e scrool add korbe noito korbena,auto onka ta scrool barer moto -->

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS form</title>
+    <style>
+input[type=text]{
+    width:100%;
+    padding:10px 20px;
+    font-size: 1rem;
+    margin:20px 0;
+    border:3px solid salmon;
+    box-sizing: border-box;/*margin padding use korar fole width ta 100% kaj korbena.seijnno border box property ta use korte hbe.tahole screen width jototoko hok na kn poro width nea kaj korbe*/
+    border-radius: 5px;
+   /* border:none;
+    border-bottom:3px solid bottom;*/
+    background-color: aquamarine;
+ 
+}
+#search{
+    background-image: url(search.png);
+    background-repeat: no-repeat;/* search icon ta ber ber jathe na ashe*/
+    font-size: 1rem;
+    padding: 15px 40px;
+    background-position:4px 2px;/*icon positon thik korar jonno ai property use korbo*/
+    background-color: white;
+    width:150px;
+    transition: 0.3s ease-in-out;/* animation jnno transition property use korbo*/
+}
+#search:focus{
+background-color: rgb(241, 174, 86);
+width: 100%;
+}
+
+    </style>
+</head>
+<body>
+     
+    <input type="text" name="search" id="search" placeholder="search"> <!--place holder bitor ja likhbo seiti page box bitor show korbe-->
+    
+
+    <form action="">
+    <label for="fname">First name</label>    
+    <input type="text" name="fname" id="fname">
+  
+    <label for="lname">First name</label>    
+    <input type="text" name="lname" id="lname">
+    
+   
+    </form>
+</body>
+</html>

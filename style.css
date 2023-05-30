@@ -1,0 +1,35 @@
+ 
+/*specificity calculator*/
+/* a=number of id */
+/*b=number of class,pseduo classes,attributes*/
+/*c=number of elements,pseduo elements */
+
+
+
+/*top theke bottom dikhe asle bottom priority besi*/
+/*a=0 b=0 c=1  ==001*/
+h1{
+
+    background-color: aqua;
+ } 
+ /*a=0 b=1 c=0 === 010 */
+ .title{
+
+    background-color: rgb(0, 255, 4);
+ } 
+ /*a=1 b=0 c=0 === 100  */
+ #heading{
+
+    background-color: rgb(217, 231, 17);
+ } 
+ /*a=0 b=1 c=1 === 011 */
+ h1.title{
+
+    background-color: rgb(165, 165, 22);
+ }
+ /*inline css priority sob theke besi.priority-1000*/
+ h1{
+
+    background-color: aqua !important;
+ } 
+ /*important ta recommanded na */

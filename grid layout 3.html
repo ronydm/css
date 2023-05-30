@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout 3</title>
+    <style>
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto auto ;
+    /*grid-template-columns: repeat(4,25%); grid-template-columns: repeat(4,1fr);aivabe declear kora jai*/
+    /*grid-template-columns: 2fr 1fr 1fr 1fr; fr=fring.fr ,auto kaj same.kon column koto to jaiga nibe*/
+    /*grid-template-columns: repeat(auto-fill, minmax(200px,1fr)). screen size ta jokon 200px niche hobe tkn fring hobe na*/
+}
+.grid-container > div{
+    border:2px solid black;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vero cupiditate excepturi ducimus deleniti laborum dolores soluta eius labore incidunt.</p></div>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vero cupiditate excepturi ducimus deleniti laborum dolores soluta eius labore incidunt.</p></div>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vero cupiditate excepturi ducimus deleniti laborum dolores soluta eius labore incidunt.</p></div>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vero cupiditate excepturi ducimus deleniti laborum dolores soluta eius labore incidunt.</p></div>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vero cupiditate excepturi ducimus deleniti laborum dolores soluta eius labore incidunt.</p></div>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vero cupiditate excepturi ducimus deleniti laborum dolores soluta eius labore incidunt.</p></div>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vero cupiditate excepturi ducimus deleniti laborum dolores soluta eius labore incidunt.</p></div>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vero cupiditate excepturi ducimus deleniti laborum dolores soluta eius labore incidunt.</p></div>
+</div>
+</body>
+</html>

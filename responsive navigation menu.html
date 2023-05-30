@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navigation menu</title>
+    <style>
+        .menu{
+ background-color: rgb(19, 151, 184);
+ display: flex;
+            justify-content: flex-end;
+        }
+        .menu a{
+           padding: 20px;
+           text-decoration: none;
+           color: white;
+        }
+        .menu a:hover{
+            background-color: rgb(144, 82, 202);
+        }
+        @media screen and (max-width:600px)
+        {
+.menu{
+    
+    flex-direction: column;/* jokon display 600px ba ter kom hobe tokon link gulu colimn  akare chole asbe*/
+    padding:10px;
+}
+.menu a{
+    background-color: indigo ;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+<a href="#">Home</a>
+<a href="#">Tutorial</a>
+<a href="#"> About me</a>
+<a href="#">Contact me</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flex box model</title>
+    <style>
+.div-container{
+    background-color: rgb(32, 136, 185);
+    display:flex; /*float use kore jeikane position change kora hoto seikane display:flex use kore aksthe positon change kora jai*/
+    flex-wrap: wrap;/*flex warp kaj holo screen size jototoko hobe tototoko modde sob kiso dekhabe,projone niche dekhabe*/
+/*     flex-wrap: nowrap; dole display te jototoko jaiga  ase tototokoi dekhabe */
+/* flex-wrap: wrap-reverse; dile ultu dik theke dekhabe */
+flex-direction: row;/*aitar sahajje row ba column borabor dekhabe*/
+flex-flow:wrap row;/* aitar sajje aksathe 2ta property use korajai*/
+justify-content:center ;
+
+/*justify-content holo div bitor jei  flex item gulu ase seigulu alien korte sahajjo korbe*/
+/*justify-content:space around dile flex item gulu modde space dibe.center dile page left,right,betwwen flex item gulu chole asb.space-between dile flex item gulu modde space dibe*/
+height:300px;
+align-items:center;
+
+
+}
+.div-container > div{
+    width:100px;
+    background-color: rgb(175, 8, 8);
+    padding:10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+   
+}
+
+    </style>
+</head>
+<body>
+    <div class="div-container">
+<div class="div1" style="order:2"><!-- style bitor order:2 dea postion ta change kora jai.ortath 2number akta num jagai asbe.1num ta sober last chile jabe,aivabe positon change korajai-->
+    div1
+</div>
+<div class="div2" >
+    div2
+</div>
+<div class="div3" style="flex-basis:250px">
+    div3
+</div>
+<div class="div4">
+    div4
+</div>
+<div class="div5">
+    div5
+</div>
+<div class="div6">
+    div6
+</div>
+<div class="div7">
+    div7
+</div>
+<div class="div8">
+    div8
+</div>
+
+
+    </div>
+</body>
+</html>
+<!--flexiable layout design korar khetre flex box model imprtn bomika rakhe-->

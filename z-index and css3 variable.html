@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-indexs and css3 variable</title>
+    <style>
+        /* globally variable declear korar jonno root use korte hbe.varible nam declear korar aghe -- 2ta hypen use kore hbe and initial akta value dite hobe*/
+ /*variable use kora sobida holo root modde variable value chaange kore dile  j sob jagai variable use kora hyeche seisob jagai aksthe change hoye jabe*/
+ :root{
+    --first-color:green; /*css3 property aigulu*/
+    --second-color:pink;
+ }
+        div{
+    height:250px;
+    width:250px;
+}
+#div1{
+    background-color: green;/*css3 ai property gulu internet exploral support krbe na,tai alda vabe background color set kore dite hobe*/
+background-color:var(--first-color ,rgb(41, 0, 128));
+/* onksmy variable nam  sathe akta deafault color set kora thakle jathe varibale nam bhul holeo  deafault color ta print korbe,aitadea bujte hbe variable nam bhul royeche*/
+
+position: relative;
+z-index: 1;
+
+}
+#div2{
+    background-color:pink;
+background-color: var(--second-color);
+position: absolute;
+top:150px;
+left:150px;
+z-index: -2;/*z_index man jeita boro seita upore dekhabve*/
+}
+/*css3 k kivabe responsive korte hoi seigulu bujar jonno @media screen use korte hoi*/
+@media screen  and (max-width:600px){
+    :root{
+    --first-color:rgb(25, 86, 179); /*css3 property aigulu*/
+    --second-color:rgb(191, 209, 25);
+ }
+
+
+}
+ 
+
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>
+<!-- z-index sahajje stack ordering  gulu control kora hoi. 2ta position:absulate dile jeita last thakbe seita stack 1st thakbe.-->
+<!--z-index 0 initial kora thake.z-index man jeita boro seita upore dekahbe-->

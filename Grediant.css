@@ -1,0 +1,15 @@
+.grediant{
+height:400px;
+width: 100%;
+background-image:radial-gradient(circle,red,green );
+
+}
+
+/*grediant use korar ai  
+background-image:linear-gradient(to right);
+syntex ti use korte hobe.
+
+bracket bitore to right k direction bujano hyeche */
+
+/* linear grediant sahajje background e onk color add kora jai*/
+/*background-image:linear-gradient(to right ,red,green, yellow, orange);*/

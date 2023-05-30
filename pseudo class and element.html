@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class & element</title>
+    <style>
+        a.c1:hover{
+            color: rgb(49, 221, 115);
+        }
+        a.c2:hover{
+            color: rgb(194, 215, 41);
+        }
+        input{
+padding:10px;
+font-size:1rem;
+width:150px;
+        }
+        input:hover{
+            background-color: rgb(111, 190, 190);
+        }
+        table,th,td{
+
+            border:2px solid green;/*commment css*/
+            padding: 5px;
+            text-align:"center"
+        }
+        tr:nth-child(even){
+
+            background-color: rgb(111, 190, 190); 
+        }
+        p:hover{
+            color: blue;
+        }
+        p::first-letter{
+            color: rgb(152, 37, 96);
+            font-size: 1.5rem;
+        }
+        p::after{
+            content:">"
+        }
+       
+
+    </style>
+</head>
+<body>
+    <a class="c1" href="https://www.w3schools.com/html/html_blocks.asp"> website</a>
+    <a class="c2"href="https://validator.w3.org/"> W3c website</a><br><br>
+    <input type="text" placeholder="Enter your name"><br><br>
+    <table>
+        <thead>
+            <tr >
+            <th>ID</th>
+            <th>NAME</th>
+            <th>GPA</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+            <td>101</td>
+            <td >Rony</td>
+            <td>3.48</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>jony</td>
+                <td>3.58</td>
+                </tr>
+                <tr  >
+                    <td>103</td>
+                    <td>mony</td>
+                    <td>3.83</td>
+                    </tr>
+            
+            
+            </tbody>
+
+
+    </table>
+    
+        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+
+</body>
+</html>
+<!--hover use krle oi link ta click korle colouring dekhabe-->
+
+<!--placeholder use kore ja likha hobe tae box bitor likha -->
+
+<!-- input:hover{
+            background-color: rgb(111, 190, 190);
+        }
+dile click korle coloring hobe.-->
+
+<!--psuedo class khetre single  :  colon use korte hbe,element double :: colon use krte hobe-->

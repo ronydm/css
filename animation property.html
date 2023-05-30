@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation property </title>
+    <style>
+        img{
+            max-width:200px;
+            height: auto;
+            border:5px solid black;
+            display: block;
+            margin:0 auto;/*center chole asbe*/
+            margin-top: 100px;
+            border-radius: 50%;
+            position:relative;
+            animation-name:img-anim;
+            animation-duration: 3s;/*smy joto kom dibo toto speed cholbe*/
+            animation-iteration-count: infinite;/* animation ta infinite ber kaj krbe*/
+animation-timing-function: linear;/*animation time chaile nijer mioto moto kora jai.linear dile asha jaoa time same thkbe*/
+        }
+        @keyframes img-anim {
+            
+            0%{
+                top:0;
+                left:0;
+            }
+            50%{
+                top:100px;
+                left:0;
+                opacity:0.5;/*opacity kaj holo halka japsha dekhabe*/
+            }
+            100%{
+                top:0;
+                left:0;
+            }
+        }
+        /*animation jonno aivabe create korte hoba
+
+
+        img:hover{
+            animation-name:img-anim;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        } 
+ aiti dile last color jeita daoa asae seitai tahkbe*/
+
+
+        /*animation ai tag ta use korte hoi
+        @keyframes img-anim {
+            0%{
+                border-color: red;
+            }
+            50%{
+                border-color: rgb(235, 12, 205);
+            }
+            100%{
+                border-color: rgb(200, 231, 22);
+            }
+        }*/
+
+    </style>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxCQZ0KwxFvG5MQ68FAcxkYRIBBeD6wDyrPQ&usqp=CAU" alt="">
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS form 2</title>
+    <style>
+textarea{
+    resize:none;/* textarea jahte cursor dea reize jathe na kora jai*/
+    width:40%;
+    padding:20px;
+    border:3px gray solid;
+    border-radius: 10px;
+    
+}
+input[type="button"],input[type="Reset"]{
+    width:100px;
+    border:none;
+    background-color: black;
+    color: white;
+    padding:10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+select{
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+
+    </style>
+</head>
+<body>
+    <select name="subject-name" id="subjects">
+        <option value="c">C program</option>
+        <option value="c++">C++ program</option>
+        <option value="java">java program</option>
+    </select>
+   
+    <form action="">
+<textarea name="comment" id="comment" cols="30" rows="10">Write your comments here</textarea> <br>
+
+<input type="button" value="submit">
+<input type="button" value="Reset">
+    </form>
+</body>
+</html>

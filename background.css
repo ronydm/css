@@ -1,0 +1,9 @@
+body{
+    background-image: url(https://www.programming-hero.com/img/header-banner-phone.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;  
+
+/*background:#197b9b url(https://www.programming-hero.com/img/header-banner-phone.png) no-repeat bottom fixed;*/
+}
+

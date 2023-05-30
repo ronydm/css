@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class and element2</title>
+    <style>
+.demo:hover{
+
+background-color: rgb(188, 188, 75);
+color: #020202;
+}
+
+p:first-child{
+
+background-color: rgb(21, 138, 60);
+color: #020202;
+}
+.demo p:nth-child(3){
+    background-color: rgb(62, 119, 175);
+color: #020202;
+
+}
+li:nth-child(odd){
+    background-color: rgb(137, 22, 83);
+color: #020202;
+
+
+}
+.first-letter-style{
+    color: #840a0a;
+    font-size:3rem;
+}
+::selection{
+    color: #1697ca;
+   background-color: blanchedalmond;
+}
+.demo::after{
+content:'';
+width:100%;
+height:20px;
+background-color:black;
+display: inline-block;
+
+
+}
+.demo::before{
+content:'';
+width:100%;
+height:20px;
+background-color:black;
+display: inline-block;
+
+
+
+}
+input::placeholder{
+
+color:rgb(91, 178, 178)
+}
+    </style>
+</head>
+<body>
+    <div class="demo">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, deserunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, deserunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, deserunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, deserunt.</p>
+    </div>
+    <ul>
+<li>rony</li>
+<li>jony</li>
+<li>mony</li>
+
+
+    </ul>
+    <p><span class="first-letter-style">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, deserunt.</p>
+    <input type="text" placeholder="Enter your name">
+
+
+
+</body>
+</html>
+<!--first-of-type /last-of-type use korle jeita 1st/last thakbe seita mark hobe.syntex
+li:nth-child(odd){
+    background-color: rgb(137, 22, 83);
+color: #020202;
+</style>
+<body>
+<ul>
+<li>rony</li>
+<li>jony</li>
+<li>mony</li>
+/ul>
+</body>
+}-->
+
+<!--::selection use korle cursor use kre mark kora jai.-->

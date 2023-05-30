@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and transform property</title>
+    <style>
+        .main{
+            background-color: aqua;
+            height: 300px;
+            width:300px;
+            margin: 0 auto;
+            text-align: center;
+            transition-property: width;/* jei tag ta nea kaj krbo seita boshbao.jmn width nea kaj krbo*/
+            transition-duration: 2s;
+            transition-delay: 1s;/*1s pore transition ta soro hobe*/
+            transition-timing-function: linear;
+            transition:width 2s linear 1s;/*width ,2s jnno transition hobe,linear,transition delay*/
+        }
+        .main:hover{
+width:400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Bangladesh</h1>
+    </div>
+</body>
+</html>
+<!-- h1 jodi transition korte chai tahole ki krte hobe
+    h1{
+        font-size:2.5rem;
+        color:white;
+        transition:font-size 2s;
+    }
+    h1:hover{
+        font-size:3rem
+    }
+-->
+<!--rotate kora jonno
+.main{
+    transaition:width 2s,transform 2s;
+}
+.main:hover{
+    width:400px;
+    transform:rotate(360deg);
+}
+
+
+
+
+
+-->
